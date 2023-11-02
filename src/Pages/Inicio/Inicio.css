@@ -1,0 +1,24 @@
+.contenedorinicio{
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+p{
+    color:blueviolet;
+    margin-left: 100px;
+}
+
+
+
+
+
+
+.contenedorboton{
+    display: flex;
+    gap:20px
+}

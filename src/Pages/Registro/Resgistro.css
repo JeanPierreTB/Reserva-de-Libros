@@ -1,0 +1,22 @@
+.contenedorregistro{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedorcolum{
+    display: flex;
+    gap:80px;
+}
+
+.contenedorcolum p{
+    margin-left: 0;
+    font-weight: bold;
+}
+
+Boton{
+    display: flex;
+    align-items: center;
+}
+
