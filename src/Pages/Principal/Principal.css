@@ -1,0 +1,27 @@
+.contenedorprincipal{
+    display: flex;
+    /*background-color: aqua;*/
+}
+
+hr{
+    width: 1220px;
+}
+
+.contenedorp{
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorde{
+    padding: 10px;
+    
+}
+
+.contenedorreservas{
+    background-color:rgb(219, 215, 215);
+    border-radius: 20px;
+}
+
+.contenedorreservas h2{
+    margin-left: 8px;
+}

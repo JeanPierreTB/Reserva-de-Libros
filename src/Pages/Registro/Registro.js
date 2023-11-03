@@ -21,8 +21,11 @@ function Registro() {
                 <Inputs namel="Correo electronico" type="text"/>
                 <Inputs namel="Password" type="password"/>
                 <Inputs namel="Ingrese Password nuevamente" type="password"/>
-                <Boton nameb="Registrar"/>
-
+                <div className='contenerebotones'>
+                  <Boton nameb="Registrar"/>
+                  <Boton nameb="Volver"/>
+                </div>
+               
             </div>
         </div>       
     </div>

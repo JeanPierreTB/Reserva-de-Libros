@@ -1,0 +1,13 @@
+.contenedorbi {
+    height: 560px;
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color:rgb(190, 190, 190);
+    
+}
+
+p{
+    margin-left: 0px;
+}
