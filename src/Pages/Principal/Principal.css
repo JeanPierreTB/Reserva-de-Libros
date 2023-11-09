@@ -20,8 +20,20 @@ hr{
 .contenedorreservas{
     background-color:rgb(219, 215, 215);
     border-radius: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
 }
 
+
+.clasesreservas{
+    display: flex;
+    gap:10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
 .contenedorreservas h2{
     margin-left: 8px;
 }
+
+
