@@ -29,57 +29,31 @@ function Perfil() {
                         </div>
                         <div>
                             {opci===1 &&(
-                                <div>
-                                    <Inputs
-                                        namel="Nombres"
-                                        type="text"/>
-                                    <Inputs
-                                        namel="Tipo de documentos"
-                                        type="text"/>
-                                    <Inputs
-                                        namel="Apellidos"
-                                        type="text"/>
-                                    <Inputs
-                                        namel="Nro de Documento"
-                                        type="text"/>
+                                <div className='contenedorpo'>
+                                    <Inputs namel="Nombres" type="text"/>
+                                    <Inputs namel="Tipo de documentos" type="text"/>
+                                    <Inputs namel="Apellidos" type="text"/>
+                                    <Inputs namel="Nro de Documento" type="text"/><br/>
                                     <Boton nameb="Guardar"/>
 
-                                </div>
-                            )}
+                                </div> )}
 
                             {opci===2 && (
-                                <div>
-                                    <Inputs
-                                        namel="Correo"
-                                        type="text"/>
-                                    <Inputs
-                                        namel="Contraseña"
-                                        type="text"/>
+                                <div className='contenedorpo'>
+                                    <Inputs namel="Correo" type="text"/>
+                                    <Inputs namel="Contraseña" type="text"/><br/>
                                     <Boton nameb="Guardar"/>
-                                </div>
-                            )}
+                                </div> )}
 
                             {opci===3 &&(
-                                <div>
-                                    <Inputs
-                                        namel="Idioma"
-                                        type="text"/>
-                                    <Inputs
-                                        namel="Prefijo"
-                                        type="text"/>
-                                    <Inputs
-                                        namel="Color"
-                                        type="color"/>
-                                </div>    
-                            )}
+                                <div className='contenedorpo'>
+                                    <Inputs namel="Idioma" type="text"/>
+                                    <Inputs namel="Prefijo"type="text"/>
+                                    <Inputs namel="Color" type="color"/>
+                                </div>)}
                         </div>
                     </div>
-
-                    
-                    
-                    
-                </div>
-                  
+                </div>   
             </div>
         </div>
     </div>

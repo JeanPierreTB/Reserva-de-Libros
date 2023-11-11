@@ -47,3 +47,12 @@
     border-bottom: 5px solid blueviolet;
 }
 
+.contenedorpo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+

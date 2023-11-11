@@ -1,0 +1,52 @@
+.contenedorlibros{
+    background-color:white;
+    border: 1px solid rgb(168, 164, 164);
+    width: 290px;
+    border-radius: 20px;
+    padding: 10px;
+    
+}
+
+.barratil{
+    display: flex;
+    align-items: center;
+    gap:20px;
+    
+}
+
+.barratil img{
+    margin-left: 10px;
+}
+
+.barratil p{
+    color:black;
+    font-weight: bold;
+}
+
+.contenedorlibros p{
+    color:black;
+}
+
+.barratil img{
+    height: 30px;
+}
+
+.contenedorlibros #libro{
+    height: 150px;
+    margin-left: 90px;
+}
+
+.contenedorl2{
+    background-color: rgb(224, 222, 222);
+}
+
+.contenedorldatos{
+    margin-left: 10px;
+}
+
+.contenedorlibros button{
+    background-color: rgb(114, 68, 158);
+    color:white;
+    height: 35px;
+    margin-left: 100px;
+}

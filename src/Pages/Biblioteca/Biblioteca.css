@@ -1,0 +1,53 @@
+.contenedorbb{
+    display: flex;
+    gap:10px;
+}
+
+
+
+.contenedorbt{
+   display: flex;
+   flex-direction: column;
+}
+
+
+.contenedorbt button{
+    height: 50px;
+    background-color: blueviolet;
+    color:white;
+}
+
+.contenedorbd{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.contenedorbt input{
+    width: 500px;
+    height: 40px;
+}
+
+.contenedorbusqueda{
+    position: relative;
+    display: inline-block;
+}
+
+.busqueda{
+    position: absolute;
+    cursor: pointer;
+    transform: translateX(-23px);
+    margin-top: 12px;
+    font-size: 20px;
+    
+}
+
+
+.contenedorllibros{
+    display: flex;
+    justify-content: center;
+    gap:20px;
+    flex-wrap: wrap;
+}
+

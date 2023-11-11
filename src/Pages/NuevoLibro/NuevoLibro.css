@@ -1,0 +1,50 @@
+.contenedorbarran{
+    display: flex;
+    gap:10px;
+}
+
+.contenedornuevo2{
+    background-color:rgb(219, 215, 215);
+    display: flex;
+    align-items: center;
+    gap:20px;
+    border-radius: 20px;
+    padding: 10px;
+    height: 470px;
+    width: 1190px;
+
+}
+
+.contenedornuevo2 img{
+    width: 250px;
+    height: 200px;
+    margin-left: 100px;
+
+}
+
+.contenedornuevodesa{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.contenedorbarranuevo{
+    background-color: white;
+    border-radius: 20px;
+    margin-top: 5px;
+    width: 800px;
+    text-align: center;
+    height: 45px;
+    border-bottom: 6px solid blueviolet;
+}
+
+.contenedornuevocampos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedornuevocampos button{
+    width: 200px;
+}
