@@ -1,9 +1,9 @@
-.contenedorbusbarras1{
+.contenedorbus1 .contenedorbusbarras1{
     display: flex;
     gap:10px;
 }
 
-.contenedorcontenido1{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1{
     background-color:rgb(252, 247, 247);
     padding: 10px;
     display: flex;
@@ -13,17 +13,17 @@
     width: 1190px;
     border-radius: 20px;
 }
-.contenedorbarrasbusqueda{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorbarrasbusqueda{
     display: flex;
     flex-direction: column;
     gap:10px;
 }
-.contenedorbusquedab{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorbarrasbusqueda .contenedorbusquedab{
     position: relative;
     display: inline-block;
 }
 
-.busqueda1{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorbarrasbusqueda .contenedorbusquedab.busqueda1{
     position: absolute;
     cursor: pointer;
     transform: translateX(-23px);
@@ -31,7 +31,7 @@
     font-size: 20px;    
 }
 
-.contenedorincluir{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorincluir{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,25 +39,25 @@
     
 }
 
-.contenedorinputsbus{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorincluir .contenedorinputsbus{
     display: flex;
     align-items: center;
 }
 
-.contenedorinputsbus input {
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorincluir .contenedorinputsbus input {
    margin-left: -100px; 
 }
 
-.contenedorincluir p{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorincluir p{
     font-weight: bold;
 }
 
-.contenedorinputsbus label {
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorincluir .contenedorinputsbus label {
     margin-left: -100px; 
     
 }
 
-.contenedorbusqboton{
+.contenedorbus1 .contenedorbusbarras1 .contenedorbustitulo1 .contenedorcontenido1 .contenedorincluir .contenedorbusqboton{
     margin-top: 10px;
     display: flex;
     gap:10px;

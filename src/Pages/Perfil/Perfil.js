@@ -21,13 +21,13 @@ function Perfil() {
                 <hr/>
                 <div className='perfilpartes'>
                     <img src="https://www.conclusion.com.ar/wp-content/uploads/2019/09/bibliotecaria.jpg" alt="foto" ></img>
-                    <div>
+                    <div className='perfilnuevo1'>
                         <div className='perfilseleccion'>
                             <p onClick={()=>Handleclik(1)} id={opci===1? "color":null}>DATOS PERSONALES</p>
                             <p onClick={()=>Handleclik(2)} id={opci===2? "color":null}>CUENTA</p>
                             <p onClick={()=>Handleclik(3)} id={opci===3? "color":null}>PREFERENCIAS</p>
                         </div>
-                        <div>
+                        <div className='perfilnuevo2'>
                             {opci===1 &&(
                                 <div className='contenedorpo'>
                                     <Inputs namel="Nombres" type="text"/>

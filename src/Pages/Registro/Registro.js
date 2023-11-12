@@ -16,7 +16,7 @@ function Registro() {
                 <Inputs namel="Tipo de documento" type="text"/>
                 <Inputs namel="Nro de documento" type="text"/>
             </div>
-            <div>
+            <div className='contenedorcolum2'>
                 <p>Datos de la cuenta</p>
                 <Inputs namel="Correo electronico" type="text"/>
                 <Inputs namel="Password" type="password"/>

@@ -1,40 +1,40 @@
-.contenedorbb{
+.contenedorbiblioteca .contenedorbb{
     display: flex;
     gap:10px;
 }
 
 
 
-.contenedorbt{
+.contenedorbiblioteca .contenedorbb .contenedorbt{
    display: flex;
    flex-direction: column;
 }
 
 
-.contenedorbt button{
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbd button{
     height: 50px;
     background-color: blueviolet;
     color:white;
 }
 
-.contenedorbd{
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbd{
     display:flex;
-    justify-content: space-between;
+    justify-content:space-between;
     align-items: center;
 }
 
 
-.contenedorbt input{
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbusqueda input{
     width: 500px;
     height: 40px;
 }
 
-.contenedorbusqueda{
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbusqueda{
     position: relative;
     display: inline-block;
 }
 
-.busqueda{
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbusqueda .busqueda{
     position: absolute;
     cursor: pointer;
     transform: translateX(-23px);
@@ -44,10 +44,11 @@
 }
 
 
-.contenedorllibros{
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorllibros{
     display: flex;
-    justify-content: center;
     gap:20px;
+    justify-content: center;
     flex-wrap: wrap;
+    width: 1200px;
 }
 

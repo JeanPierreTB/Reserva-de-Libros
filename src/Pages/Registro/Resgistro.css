@@ -5,17 +5,17 @@
     align-items: center;
 }
 
-.contenedorcolum{
+.contenedorregistro .contenedorcolum{
     display: flex;
     gap:80px;
 }
 
-.contenedorcolum p{
+.contenedorregistro.contenedorcolum p{
     margin-left: 0;
     font-weight: bold;
 }
 
-.contenerebotones{
+.contenedorregistro .contenedorcolum2 .contenerebotones{
     display: flex;
     justify-content:center;
     margin-top: 20px;

@@ -1,29 +1,29 @@
-.perfilbarras{
+.perfil .perfilbarras{
     display: flex;
 }
-.perfilcontenido{
+.perfil .perfilbarras .perfilcontenido{
     margin-left: 10px;
 }
 
-.perfilpartes{
+.perfil .perfilbarras .perfilcontenido .perfilpartes{
     background-color:rgb(219, 215, 215);
     border-radius: 20px;
     height: 500px;
     width: 1215px;
 }
 
-.perfilpartes{
+.perfil .perfilbarras .perfilcontenido .perfilpartes{
     display: flex;
     justify-content:space-around;
 }
 
-.perfilpartes img{
+.perfil .perfilbarras .perfilcontenido .perfilpartes img{
     width: 300px;
     height: 200px;
     padding: 30px;
 }
 
-.perfilseleccion{
+.perfil .perfilbarras .perfilcontenido .perfilpartes .perfilseleccion{
     background-color: white;
     width: 515px;
     height: 60px;
@@ -37,17 +37,17 @@
     border: 1px solid rgb(133, 131, 131);
 }
 
-.perfilseleccion p{
+.perfil .perfilbarras .perfilcontenido .perfilpartes .perfilseleccion p{
     font-weight: bold;
     cursor: pointer;
 }
 
 
-#color{
+.perfil .perfilbarras .perfilcontenido .perfilpartes .perfilnuevo1 .perfilseleccion #color{
     border-bottom: 5px solid blueviolet;
 }
 
-.contenedorpo{
+.perfil .perfilbarras .perfilcontenido .perfilpartes .perfilnuevo1 .perfilnuevo2 .contenedorpo{
     display: flex;
     flex-direction: column;
     justify-content: center;

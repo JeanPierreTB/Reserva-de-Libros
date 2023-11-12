@@ -1,9 +1,9 @@
-.contenedorprincipal{
+.contenedorp .contenedorprincipal{
     display: flex;
     /*background-color: aqua;*/
 }
 
-hr{
+.contenedorp .contenedorprincipal .contenedorde hr{
     width: 1220px;
 }
 
@@ -12,12 +12,12 @@ hr{
     flex-direction: column;
 }
 
-.contenedorde{
+.contenedorp .contenedorprincipal .contenedorde{
     padding: 10px;
     
 }
 
-.contenedorreservas{
+.contenedorp .contenedorprincipal .contenedorde .contenedorreservas{
     background-color:rgb(219, 215, 215);
     border-radius: 20px;
     padding: 20px;
@@ -26,13 +26,13 @@ hr{
 }
 
 
-.clasesreservas{
+.contenedorp .contenedorprincipal .contenedorde .contenedorreservas .clasesreservas{
     display: flex;
     gap:10px;
     flex-wrap: wrap;
     align-items: center;
 }
-.contenedorreservas h2{
+.contenedorp .contenedorprincipal .contenedorde.contenedorreservas h2{
     margin-left: 8px;
 }
 

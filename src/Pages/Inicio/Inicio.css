@@ -8,7 +8,7 @@
     
 }
 
-p{
+.contenedorinicio p{
     color:blueviolet;
     margin-left: 100px;
 }
@@ -18,7 +18,7 @@ p{
 
 
 
-.contenedorboton{
+.contenedorinicio .contenedorboton{
     display: flex;
     gap:20px
 }
