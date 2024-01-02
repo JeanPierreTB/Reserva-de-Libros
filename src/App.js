@@ -1,4 +1,5 @@
 
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Biblioteca from './Pages/Biblioteca/Biblioteca';
 import Busqueda from './Pages/Busqueda/Busqueda';
@@ -11,9 +12,18 @@ import Registro from './Pages/Registro/Registro';
 
 function App() {
   return (
-    <div className="App">
-      <Cita/>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Inicio/>}/>
+        <Route path='/registro' element={<Registro/>}/>
+        <Route path='/principal' element={<Principal/>}/>
+        <Route path='/perfil' element={<Perfil/>}/>
+        <Route path='/biblioteca' element={<Biblioteca/>}/>
+        <Route path='/nuevolibro' element={<NuevoLibro/>}/>
+        <Route path='/busqueda' element={<Busqueda/>}/>
+        <Route path='/cita' element={<Cita/>}/>
+      </Routes>
+    </BrowserRouter>
   );
 }
 
