@@ -1,7 +1,14 @@
 import React from 'react'
 import "./Libros.css"
+import { useNavigate } from 'react-router-dom'
 
 function Libros({foto,desfoto,titulo,fotol,desl,ibsn,autor,editor}) {
+  const navigate=useNavigate();
+
+  const handleclik=()=>{
+    localStorage.setItem('libro',ibsn);
+    navigate("/cita")
+  }
   return (
     <div className='contenedorlibros'>
         <div className='barratil'>
@@ -17,7 +24,7 @@ function Libros({foto,desfoto,titulo,fotol,desl,ibsn,autor,editor}) {
             <p><b>Autor:</b>{autor}</p>
             <p><b>Editor:</b>{editor}</p>
         </div>
-        <button>Reservar</button>
+        <button onClick={handleclik}>Reservar</button>
         
     </div>
   )

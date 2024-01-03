@@ -1,9 +1,47 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Barras from '../../Components/Barras/Barras'
 import BarrasIzquierda from '../../Components/BarrasIzquierda/BarrasIzquierda'
 import "./Cita.css"
 import Boton from '../../Components/Boton/Boton'
 function Cita() {
+  const[ibsn,setibsn]=useState(localStorage.getItem('libro'))
+  const[libro,setlibro]=useState({})
+  const[fecha,setfecha]=useState('')
+
+  useEffect(()=>{
+    fetch('http://localhost:3001/buscar-libro',{
+        method:'POST',
+        headers:{
+            'Content-Type':'application/json'
+            },
+        body:JSON.stringify({ISBN:ibsn})
+    })
+        .then(response=>response.json())
+        .then(data=>{
+            setlibro(data.libro);
+        })
+        .catch(e=>console.error(`Ocurrio un error ${e}`))
+  },[]);
+
+  const handlereservar=()=>{
+    fetch('http://localhost:3001/resevar-libro',{
+        method:"POST",
+        headers:{
+            'Content-Type': 'application/json'
+            },
+        body: JSON.stringify({
+            ISBN:ibsn,
+            correo:localStorage.getItem('correo'),
+            contra:localStorage.getItem('contra'),
+            fecha:fecha})
+    })
+    .then(response=>response.json())
+    .then(data=>{
+        console.log(data)
+        setfecha('')
+    })
+    .catch(e=>console.error(`Ocurrio un error ${e}`))
+  }
   return (
     <div className='contenedorCita1'>
         <Barras/>
@@ -14,34 +52,21 @@ function Cita() {
                 <hr/>
                 <div className='contenedorCitacontenido'>
                     <div className='conteendorcitacontendioin'>
-                        <img src="https://cdn-icons-png.flaticon.com/512/753/753352.png" alt="imagen"></img>
-                        <h2>Psychology of computer programming</h2>
-                        <p>Disponible</p>
+                        <img src={libro.foto} alt={libro.id}></img>
+                        <h2>{libro.titulo}</h2>
+                        <p>{libro.stock>0? "Disponible":"No disponible"}</p>
                     </div>
                     <div className='contenedorCitacontenido2'>
                         <div className='contenedorcitaimagen'>
-                            <img src="https://mott.pe/noticias/wp-content/uploads/2016/03/9788497592208.jpg" alt="ah"></img>
+                            <img src={libro.foto2} alt={libro.id}></img>
                         </div>
                         
-                        <p>Este libro solo tiene un objetivo principal 
-                            provocar el inicio de un nuevo campo de estudio:la
-                            programacion informatica como actividad humana o,
-                            en pocas palabras,la psicologia de la programacion
-                            informatica.Todos los demas objetivos estan subordinados
-                            a este.Por ejemplo,he intentado que el libro sea interesante
-                            y no tecnico,en la medida de lo posible,para animar el mayor
-                            numero posible de personas a leerlo:no solo programadores,sino 
-                            gestores de programacion y otras personas relacionadas con la
-                            programacion en las muchas formas en que estamos relacionados 
-                            con la programacion hoy en dia.Lo que intento conseguir es que
-                            lector diga,al terminar el libro:"Si,la programacion no es solo
-                            una cuestion de hardware y software.A partir de ahora tendre que
-                            que ver las cosas de otra manera"
+                        <p>{libro.des}
 
                         </p>
                         <div className='contenedorcitascontendio3'>
                             <p>Edicore</p>
-                            <p><b>Van Nostrand Reinhold Company</b></p>
+                            <p><b>{libro.editor}</b></p>
                         </div>
                     </div>
 
@@ -63,8 +88,8 @@ function Cita() {
                     </div>
                     
                     <label>Ingresa fecha limite</label>
-                    <input type='date'></input><br/>
-                    <button>Reservar</button>
+                    <input type='date' value={fecha} onChange={(e)=>setfecha(e.target.value)}></input><br/>
+                    <button onClick={handlereservar}>Reservar</button>
                 </div>
                 
             </div>

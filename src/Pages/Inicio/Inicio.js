@@ -25,6 +25,8 @@ function Inicio() {
       .then(data=>{
         if(data.success){
           alert("Bienvenido")
+          localStorage.setItem('correo',datos.correo)
+          localStorage.setItem('contra',datos.contra)
           navigate("/principal")
         }
         else

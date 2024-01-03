@@ -9,6 +9,7 @@ import NuevoLibro from './Pages/NuevoLibro/NuevoLibro';
 import Perfil from './Pages/Perfil/Perfil';
 import Principal from './Pages/Principal/Principal';
 import Registro from './Pages/Registro/Registro';
+import Reservas from './Components/Reservas/Reservas';
 
 function App() {
   return (
