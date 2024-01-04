@@ -17,7 +17,14 @@
     color:white;
 }
 
+.contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbd .contendorseleccion{
+    display: flex;
+    gap:10px;
+}
+
+
 .contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbd{
+    margin-left: 150px;
     display:flex;
     justify-content:space-between;
     align-items: center;
@@ -30,6 +37,7 @@
 }
 
 .contenedorbiblioteca .contenedorbb .contenedorbt .contenedorbusqueda{
+    margin-left: 160px;
     position: relative;
     display: inline-block;
 }
@@ -45,6 +53,7 @@
 
 
 .contenedorbiblioteca .contenedorbb .contenedorbt .contenedorllibros{
+    margin-left: 100px;
     display: flex;
     gap:20px;
     justify-content: center;

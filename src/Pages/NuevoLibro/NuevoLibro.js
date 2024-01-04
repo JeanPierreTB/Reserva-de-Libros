@@ -25,7 +25,7 @@ function NuevoLibro() {
                             <Inputs namel="IBSN" type="text"/>
                             <Inputs namel="Serie,Tipo" type="text"/><br/>
                             <button>Guardar</button>
-                        </div>
+                        </div>  
                     </div>
                 </div>
             </div>

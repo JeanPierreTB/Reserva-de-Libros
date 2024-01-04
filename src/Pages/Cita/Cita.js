@@ -37,7 +37,7 @@ function Cita() {
     })
     .then(response=>response.json())
     .then(data=>{
-        console.log(data)
+        alert(data.message)
         setfecha('')
     })
     .catch(e=>console.error(`Ocurrio un error ${e}`))

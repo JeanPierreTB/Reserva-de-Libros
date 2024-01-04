@@ -64,7 +64,6 @@ function Perfil() {
   }
   return (
     <div className='perfil'>
-        <Barras/>
         <div className='perfilbarras'>
             <BarrasIzquierda/>
             <div className='perfilcontenido'>

@@ -1,5 +1,6 @@
 .contenedorbi {
-    height: 560px;
+    position: fixed;
+    height: 100%;
     width: 100px;
     display: flex;
     flex-direction: column;
@@ -11,4 +12,5 @@
 p{
     margin-left: 0px;
     color:blueviolet;
+    cursor: pointer;
 }
