@@ -2,6 +2,10 @@
     display: flex;
     gap:10px;
 }
+.contenedorCita1 .contenedorCitaBarras .contenedorCitaTitulo {
+    margin-left: 150px;
+}
+
 
 .contenedorCita1 .contenedorCitaBarras .contenedorCitaTitulo hr{
     width: 1220px;

@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react'
-import Barras from '../../Components/Barras/Barras'
 import BarrasIzquierda from '../../Components/BarrasIzquierda/BarrasIzquierda'
 import "./Cita.css"
-import Boton from '../../Components/Boton/Boton'
 function Cita() {
   const[ibsn,setibsn]=useState(localStorage.getItem('libro'))
   const[libro,setlibro]=useState({})
@@ -44,7 +42,6 @@ function Cita() {
   }
   return (
     <div className='contenedorCita1'>
-        <Barras/>
         <div className='contenedorCitaBarras'>
             <BarrasIzquierda/>
             <div className='contenedorCitaTitulo'>

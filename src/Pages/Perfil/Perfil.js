@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Barras from '../../Components/Barras/Barras'
 import BarrasIzquierda from '../../Components/BarrasIzquierda/BarrasIzquierda'
 import Inputs from '../../Components/Inputs/Inputs'
 import Boton from '../../Components/Boton/Boton'
@@ -65,7 +64,7 @@ function Perfil() {
   return (
     <div className='perfil'>
         <div className='perfilbarras'>
-            <BarrasIzquierda/>
+            <BarrasIzquierda rol={datos.rol}/>
             <div className='perfilcontenido'>
                 <h1>Hola,{datos && datos.nombre}</h1>
                 <hr/>
@@ -81,7 +80,14 @@ function Perfil() {
                             {opci===1 &&(
                                 <div className='contenedorpo'>
                                     <Inputs namel="Nombres" type="text" value={datos && datos.nombre} onchange={(e)=>setdatos({...datos,nombre:e.target.value})}/>
-                                    <Inputs namel="Tipo de documentos" type="text" value={datos && datos.tipodocumento} onchange={(e)=>setdatos({...datos,tipodocumento:e.target.value})}/>
+                                    <div style={{display:'flex',flexDirection:'column'}}>
+                                        <label>Tipo de documento</label>
+                                        <select className='select' value={datos && datos.tipodocumento} onChange={(e)=>setdatos({...datos,tipodocumento:e.target.value})}>
+                                            <option>-</option>
+                                            <option>DNI</option>
+                                            <option>#Pasaporte</option>
+                                        </select>
+                                    </div>
                                     <Inputs namel="Apellidos" type="text" value={datos && datos.apellido} onchange={(e)=>setdatos({...datos,apellido:e.target.value})}/>
                                     <Inputs namel="Nro de Documento" type="text" value={datos && datos.ndocumento} onchange={(e)=>setdatos({...datos,ndocumento:e.target.value})}/><br/>
                                     <Boton nameb="Guardar" onclik={handleclik1}/>

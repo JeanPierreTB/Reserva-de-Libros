@@ -20,4 +20,11 @@
     justify-content:center;
     margin-top: 20px;
 }
-
+.select{
+    
+        height: 40px;
+        width: 260px;
+        border: 2px solid blueviolet;
+        border-radius: 5px;
+    
+}

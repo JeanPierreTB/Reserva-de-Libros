@@ -2,14 +2,12 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Biblioteca from './Pages/Biblioteca/Biblioteca';
-import Busqueda from './Pages/Busqueda/Busqueda';
 import Cita from './Pages/Cita/Cita';
 import Inicio from './Pages/Inicio/Inicio';
 import NuevoLibro from './Pages/NuevoLibro/NuevoLibro';
 import Perfil from './Pages/Perfil/Perfil';
 import Principal from './Pages/Principal/Principal';
 import Registro from './Pages/Registro/Registro';
-import Reservas from './Components/Reservas/Reservas';
 
 function App() {
   return (
@@ -21,7 +19,6 @@ function App() {
         <Route path='/perfil' element={<Perfil/>}/>
         <Route path='/biblioteca' element={<Biblioteca/>}/>
         <Route path='/nuevolibro' element={<NuevoLibro/>}/>
-        <Route path='/busqueda' element={<Busqueda/>}/>
         <Route path='/cita' element={<Cita/>}/>
       </Routes>
     </BrowserRouter>

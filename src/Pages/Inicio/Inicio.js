@@ -27,7 +27,7 @@ function Inicio() {
           alert("Bienvenido")
           localStorage.setItem('correo',datos.correo)
           localStorage.setItem('contra',datos.contra)
-          navigate("/principal")
+          navigate("/biblioteca")
         }
         else
           alert('Usuario o contraseña incorrecta')

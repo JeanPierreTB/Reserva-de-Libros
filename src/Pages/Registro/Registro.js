@@ -51,13 +51,21 @@ function Registro() {
                 <p>Datos Personales</p>
                 <Inputs namel="Nombres" type="text" value={datospersonales.nombre} onchange={(e)=>setdatospersonales({...datospersonales,nombre:e.target.value})}/>
                 <Inputs namel="Apellidos" type="text" value={datospersonales.apellido} onchange={(e)=>setdatospersonales({...datospersonales,apellido:e.target.value})}/>
-                <Inputs namel="Tipo de documento" type="text" value={datospersonales.tipo} onchange={(e)=>setdatospersonales({...datospersonales,tipo:e.target.value})}/>
+                <div style={{display:'flex',flexDirection:'column'}}>
+                  <label>Tipo de documento</label>
+                  <select className='select' value={datospersonales.tipo} onChange={(e)=>setdatospersonales({...datospersonales,tipo:e.target.value})}>
+                    <option>-</option>
+                    <option>DNI</option>
+                    <option>#Pasaporte</option>
+                  </select>
+                </div>
+                
                 <Inputs namel="Nro de documento" type="text" value={datospersonales.nro} onchange={(e)=>setdatospersonales({...datospersonales,nro:e.target.value})}/>
             </div>
             <div className='contenedorcolum2'>
                 <p>Datos de la cuenta</p>
                 <Inputs namel="Correo electronico" type="text" value={datospersonales.correo} onchange={(e)=>setdatospersonales({...datospersonales,correo:e.target.value})}/>
-                <Inputs namel="Password" type="password" value={datospersonales.password} onchange={(e)=>setdatospersonales({...datospersonales,contra:e.target.value})}/>
+                <Inputs namel="Password" type="password" value={datospersonales.contra} onchange={(e)=>setdatospersonales({...datospersonales,contra:e.target.value})}/>
                 <Inputs namel="Ingrese Password nuevamente" type="password" value={repetir} onchange={(e)=>setrepetir(e.target.value)}/>
                 <div className='contenerebotones'>
                   <Boton nameb="Registrar" onclik={handleregister}/>

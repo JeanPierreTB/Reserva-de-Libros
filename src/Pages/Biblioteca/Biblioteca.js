@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import "./Biblioteca.css"
-import Barras from '../../Components/Barras/Barras'
 import BarrasIzquierda from '../../Components/BarrasIzquierda/BarrasIzquierda'
 import { FaSearch } from 'react-icons/fa'
 import Libros from '../../Components/Libros/Libros'
@@ -52,7 +51,12 @@ function Biblioteca() {
           setdatos(data.librosUsuario)
       })
       .catch(e=>console.log(`Ocurrio un error ${e}`))
+
   },[])
+
+  
+
+
 
   const handlesearch=()=>{
     if(busqueda!==''){
@@ -83,18 +87,19 @@ function Biblioteca() {
       .catch(e=>console.log(`Ocurrio un error ${e}`))
       setdatos(datos.filter(data=>data.titulo!==titulo))
   }
+
+
   return (
     <div className='contenedorbiblioteca'>
-
         <div className='contenedorbb'>
-            <BarrasIzquierda/>
+            <BarrasIzquierda rol={datauser.rol}/>
             <div className='contenedorbt'>
                 <div className='contenedorbd'>
                     <h1>Biblioteca</h1>
                     {datauser.rol===0? (<button onClick={handleclik}>Agregar libro</button>):
                     (<div className='contendorseleccion'>
                       <select value={titulo} onChange={(e)=>setitulo(e.target.value)}>
-                        {datos.map(data=>(
+                        {datos?.map(data=>(
                           <option key={data.id}>{data.titulo}</option>
                     ))}
                       </select>
@@ -109,7 +114,8 @@ function Biblioteca() {
                 <div className='contenedorllibros'>
                   {libros.map(libro=>(
                     
-                      <Libros 
+                      <Libros
+                        rol={datauser.rol} 
                         foto={libro.foto}
                         desfoto={libro.id}
                         titulo={libro.titulo}

@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-import Barras from '../../Components/Barras/Barras'
 import BarrasIzquierda from '../../Components/BarrasIzquierda/BarrasIzquierda'
 import "./Principal.css";
 import Reservas from '../../Components/Reservas/Reservas';
@@ -65,13 +64,13 @@ function Principal() {
                 <div className='contenedorreservas'>
                     <h2>Ultimas Reservas</h2>
                     <div className='clasesreservas'>
-                      {datos.map(data=>(
+                      {datos?.map(data=>(
                         <Reservas
-                          key={data.id}
-                          des={data.ISBN}
-                          foto={data.foto2}
-                          titulo={data.titulo}
-                          fecha={new Date(data.Libro_Usuario.fecha).toLocaleDateString()}
+                          key={data && data.id}
+                          des={data && data.ISBN}
+                          foto={data && data.foto2}
+                          titulo={data && data.titulo}
+                          fecha={data && new Date(data.Libro_Usuario.fecha).toLocaleDateString()}
                         
                         />
                       ))}
@@ -82,7 +81,7 @@ function Principal() {
                 <div style={{marginTop:'20px'}} className='contenedorreservas'>
                     <h2>Libros que vence pronto</h2>
                     <div className='clasesreservas'>
-                      {datos2.length===0? (<p>No hay libros que vence pronto</p>):datos2.map(data=>(
+                      {datos2.length===0? (<p>No hay libros que vence pronto</p>):datos2?.map(data=>(
                         <Reservas
                           key={data.id}
                           des={data.ISBN}

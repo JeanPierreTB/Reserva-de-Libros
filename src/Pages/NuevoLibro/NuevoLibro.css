@@ -3,6 +3,10 @@
     gap:10px;
 }
 
+.contenedornuevo .contenedorbarran .contenedorbarraco{
+    margin-left: 150px;
+}
+
 .contenedornuevo .contenedorbarran .contenedorbarraco .contenedornuevo2{
     background-color:rgb(219, 215, 215);
     display: flex;
@@ -40,9 +44,8 @@
 
 .contenedornuevo .contenedorbarran .contenedorbarraco .contenedornuevo2 .contenedornuevodesa .contenedornuevocampos{
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
+    gap:10px;
 }
 
 .contenedornuevo .contenedorbarran .contenedorbarraco .contenedornuevo2 .contenedornuevodesa .contenedornuevocampos button{
